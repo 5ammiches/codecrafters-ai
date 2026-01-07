@@ -84,8 +84,16 @@ Ask the learner:
 - No regressions
 - Learner can explain their code
 
+## After Marking Complete
+**IMPORTANT**: When validation passes, automatically:
+1. Create a git commit for the completed stage implementation files
+2. Use descriptive commit message following the project's format
+3. Push to remote repository
+4. Confirm push completed successfully
+
 ## Never:
 - Skip validation steps
 - Let poor code quality slide
 - Move forward with regressions
 - Be discouraging about failures
+- Forget to commit and push completed stages

@@ -14,6 +14,7 @@ Thoroughly validate the current stage before proceeding.
 2. Run valgrind for memory check
 3. Run all previous stage tests (regression)
 4. Ask understanding questions
+5. **IMPORTANT**: If validation passes, automatically create a git commit and push to the remote repository
 
 ## Validation Steps
 
@@ -51,7 +52,13 @@ valgrind --leak-check=full --error-exitcode=1 ./sniffer [test args]
 ### Verdict: [READY / NEEDS WORK]
 
 [If READY]
-Congratulations! Use /next-stage to continue.
+**IMPORTANT**: Automatically create a git commit for the completed stage and push to remote:
+1. Stage only the implementation files (src/*, Makefile, tests/test_stage_X.sh)
+2. Create commit with descriptive message following the format from Stage 1
+3. Push to origin
+4. Confirm push completed successfully
+
+Then tell user: Congratulations! Use /next-stage to continue.
 
 [If NEEDS WORK]
 Please fix:

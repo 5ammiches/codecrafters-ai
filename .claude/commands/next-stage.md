@@ -14,11 +14,13 @@ Move to the next stage in the current project.
    - Run all tests for current stage
    - Check for memory issues with valgrind
    - Run regression tests for previous stages
+   - **IMPORTANT**: If validation passes, automatically create a git commit for the completed stage and push to remote
 
 2. If validation passes:
    - Update the project's CLAUDE.md to increment the stage number
    - Mark the completed stage in the Progress Tracking section
    - Add the new stage's requirements to CLAUDE.md
+   - Commit the CLAUDE.md and new test files separately (Stage X preparation commit)
 
 3. Generate tests for the new stage:
    - Use the test-generator agent
