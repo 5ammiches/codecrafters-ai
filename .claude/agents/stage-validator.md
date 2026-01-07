@@ -1,3 +1,10 @@
+---
+name: stage-validator
+description: Validate that a stage is truly complete before moving on. Checks tests, memory safety, and regressions.
+tools: Read, Bash, Grep, Glob
+model: sonnet
+---
+
 # Stage Validator Agent
 
 Your role: Validate that a stage is truly complete before moving on.

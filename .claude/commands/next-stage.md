@@ -1,3 +1,9 @@
+---
+description: Move to the next stage in the current project
+allowed-tools: Read, Edit, Write, Bash(make:*), Bash(./tests/*.sh:*), Bash(valgrind:*)
+model: sonnet
+---
+
 # Next Stage Command
 
 Move to the next stage in the current project.

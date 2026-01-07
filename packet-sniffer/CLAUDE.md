@@ -1,6 +1,6 @@
 # Packet Sniffer in C - CodeCrafters Style
 
-## Current Stage: Stage 1 - Capture Basics
+## Current Stage: Stage 2 - Print Packet Info
 
 **Language**: C (C11)
 **Build System**: Make
@@ -10,7 +10,7 @@
 
 ## Stage Requirements
 
-### Stage 1: Initialize libpcap and Capture Packets
+### Stage 1: Initialize libpcap and Capture Packets ✅ COMPLETED
 **Goal**: Set up libpcap, open a network interface, and print "Packet captured!" for each packet.
 
 **You will learn**:
@@ -29,11 +29,36 @@
 
 ---
 
+### Stage 2: Print Basic Packet Info
+**Goal**: For each captured packet, print the timestamp and packet length information.
+
+**You will learn**:
+- Reading packet metadata from `struct pcap_pkthdr`
+- Working with Unix timestamps and converting to readable time
+- Understanding captured length vs actual packet length
+- Formatting output with C standard library functions
+
+**Expected Output Format**:
+```
+[2026-01-07 14:23:45.123456] Packet captured: 64 bytes captured, 64 bytes total
+[2026-01-07 14:23:46.234567] Packet captured: 98 bytes captured, 98 bytes total
+```
+
+**Key concepts to research**:
+- `struct pcap_pkthdr` - Contains timestamp (`ts`), captured length (`caplen`), actual length (`len`)
+- `struct timeval` - Unix timestamp with microsecond precision
+- Time formatting functions: `localtime()`, `strftime()`
+- Difference between `caplen` (bytes captured) and `len` (actual packet size on wire)
+
+**Hint**: The `pcap_pkthdr` structure is already passed to your `packet_handler()` callback!
+
+---
+
 ## All Stages Overview
 
 ### Phase 1: Capture Basics
 - [x] **Stage 1**: Initialize libpcap, capture packets, print "Packet captured!"
-- [ ] **Stage 2**: Print basic packet info (timestamp, length)
+- [ ] **Stage 2**: Print basic packet info (timestamp, length) ← YOU ARE HERE
 - [ ] **Stage 3**: Decode Ethernet headers (MAC addresses)
 
 ### Phase 2: Network Layer
@@ -125,3 +150,8 @@ LDFLAGS = -lpcap
 - macOS: libpcap is pre-installed
 - Need sudo to capture packets
 - Use `en0` for WiFi, `lo0` for loopback on macOS
+- Fixed bug: Added return statement after `pcap_create()` error
+- Fixed bug: Removed duplicate `pcap_close()`
+
+### Stage 2 Notes:
+- Starting Stage 2...

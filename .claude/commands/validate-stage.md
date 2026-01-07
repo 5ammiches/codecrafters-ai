@@ -1,3 +1,9 @@
+---
+description: Thoroughly validate the current stage before proceeding
+allowed-tools: Bash(make:*), Bash(make clean:*), Bash(./tests/*.sh:*), Bash(valgrind:*)
+model: sonnet
+---
+
 # Validate Stage Command
 
 Thoroughly validate the current stage before proceeding.

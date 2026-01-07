@@ -1,3 +1,9 @@
+---
+description: Review the user's implementation for the current stage
+allowed-tools: Read, Grep, Glob, Bash(make:*)
+model: sonnet
+---
+
 # Review Code Command
 
 Review the user's implementation for the current stage.

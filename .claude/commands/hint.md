@@ -1,3 +1,9 @@
+---
+description: Provide a progressive hint for the current stage
+allowed-tools: Read, Grep, Glob
+model: sonnet
+---
+
 # Hint Command
 
 Provide a progressive hint for the current stage.

@@ -1,3 +1,9 @@
+---
+description: Run tests for the current stage and report results
+allowed-tools: Bash(make:*), Bash(make clean:*), Bash(./tests/test_stage_*.sh:*)
+model: sonnet
+---
+
 # Test Stage Command
 
 Run tests for the current stage and report results.
