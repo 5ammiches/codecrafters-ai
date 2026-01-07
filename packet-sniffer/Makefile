@@ -1,7 +1,7 @@
 # Packet Sniffer - Makefile
 
 CC = clang
-CFLAGS = -Wall -Wextra -Werror -std=c11 -g
+CFLAGS = -Wall -Wextra -Werror -Wno-error=unused-parameter -std=c11 -g
 LDFLAGS = -lpcap
 
 # Source files

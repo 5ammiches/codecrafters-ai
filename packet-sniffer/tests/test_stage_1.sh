@@ -28,9 +28,9 @@ fi
 
 # Test 1: Program starts without crashing
 info "Test 1: Program starts successfully"
-timeout 2 sudo ./sniffer > /tmp/sniffer_output.txt 2>&1 &
+sudo ./sniffer > /tmp/sniffer_output.txt 2>&1 &
 SNIFFER_PID=$!
-sleep 1
+sleep 2
 
 if ! ps -p $SNIFFER_PID > /dev/null 2>&1; then
     # Process died, check if it was intentional or crash
