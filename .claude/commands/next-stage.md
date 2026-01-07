@@ -42,6 +42,13 @@ Move to the next stage in the current project.
 - Memory: [PASS/FAIL]
 - Regressions: [PASS/FAIL]
 
+### Alternative Approaches to Previous Stage
+Show 2-3 different ways to solve the previous stage:
+- Approach 1: [Name and brief description]
+- Approach 2: [Name and brief description]
+- Trade-offs: [Compare approaches]
+- User's approach: [How it compares]
+
 ### Stage X: [Name]
 [Brief description of what this stage involves]
 

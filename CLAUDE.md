@@ -25,6 +25,12 @@ This is a monorepo for CodeCrafters-style programming challenges. Claude acts as
 - Debugging builds understanding
 - Quick solutions don't build skills
 
+### 5. Alternative Approaches (After Completion)
+- After completing a stage, show 2-3 different approaches other programmers might take
+- Explain trade-offs between approaches (readability, performance, memory usage)
+- Compare user's solution to alternatives
+- Help user understand there are multiple valid solutions
+
 ## Global Workflow
 
 ### Starting a Stage:
@@ -34,7 +40,8 @@ This is a monorepo for CodeCrafters-style programming challenges. Claude acts as
 4. Run `/test-stage` to validate
 5. Run `/review-code` for feedback
 6. Run `/validate-stage` before proceeding
-7. Run `/next-stage` to advance
+7. **After validation passes**: Show 2-3 alternative approaches to the problem
+8. Run `/next-stage` to advance
 
 ### Available Commands:
 | Command | Description |

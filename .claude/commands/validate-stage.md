@@ -58,6 +58,13 @@ valgrind --leak-check=full --error-exitcode=1 ./sniffer [test args]
 3. Push to origin
 4. Confirm push completed successfully
 
+**Then show alternative approaches**:
+Present 2-3 different ways other programmers might solve this stage:
+- Approach 1: [Name] - Brief description with code snippet
+- Approach 2: [Name] - Brief description with code snippet
+- Trade-offs: Compare approaches (readability, performance, memory, complexity)
+- User's approach: How does their solution compare?
+
 Then tell user: Congratulations! Use /next-stage to continue.
 
 [If NEEDS WORK]
